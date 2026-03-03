@@ -1,15 +1,13 @@
-.home {
+.top-margin {
     padding: 2em;
     margin: 2em;
 }
 
-
 body {
-    padding: 2em;
-    margin: 2em;
     color: #10120D;
     font-family: sans-serif;
     background-image: url("images/tropical-forest\ \(2\).jpg");
+    font-size: clamp(1rem, 2rem + -0.083vw, 1.5rem)
 }
 
 h1 {
@@ -19,14 +17,15 @@ h1 {
     color: #3b452b;
     text-shadow: rgb(21, 20, 13) 1px 0 1px;
     font-family: Bitter;
+    font-size: clamp(1.5rem, 0.955rem + 2.73vw, 3rem);
 }
 
 main {
     background-color: white;
     width: 800px;
-    margin: 1em auto 1em auto;
+    margin:5em auto;
     /*TRBL*/
-    padding: 2em;
+    padding: 1em;
     border-radius: 1em;
     box-shadow: black 2px 2px 1px;
     border: 1px double #291c20;
@@ -79,33 +78,8 @@ header li a {
     color: #D4A546;
     text-decoration: none;
     font-family: Raleway;
-    font-size: large;
-
+    font-size: 1.5rem;
 }
-
-/* highlight color? #AE9F98
-nav {
-    background-color: #282D20;
-    height: 25px;
-    text-decoration: none;
-    font-size: 1.5em;
-    list-style-type: none;
-    margin: 25px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-}
-
-nav a {
-    color: #D4A546;
-    margin: auto;
-    padding-right: 10px;
-    text-shadow: 2px 1px #000000;
-    font-family: Raleway;
-    font-size: large;
-    text-decoration: solid;
-
-}*/
 
 footer img {
     width: 15px;
@@ -119,10 +93,9 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    height: 45px;
+    height: 70px;
     display: flex;
     align-items: baseline;
-
 }
 
 footer * {
@@ -134,25 +107,14 @@ footer a {
     margin: auto;
     padding-left: 5em;
     font-family: Raleway;
-    font-size: medium;
+    font-size: .5rem;
     text-decoration: solid;
     align-content: center;
     gap: 30px;
 }
 
-/*footer {
-    color: #EAEAEA;
-    background-color: #282D20;
-    display: flex;
-    align-items: center;
-    height: 35px;
-    margin: auto;
-    font-family: Raleway;
-    position: relative;
-}*/
-
 .checkout {
-    text-align: left;
+    text-align: left;    
 }
 
 p {
@@ -177,15 +139,35 @@ p {
     src: url(fonts/Raleway/Raleway-VariableFont_wght.ttf);
 }
 
-.container {
+/*Not working, should drop the image on home page lower down*/
+.landing-page{
+     margin: 4em;
+}
 
-    padding-right: 10px;
+.navigation {
+
+    padding-right: 10px;    
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-
 }
 
 .cvc {
     width: 30px;
 }
+/* need to utilize throughout doc*/
+.wrapper{  
+padding: 0 15px;
+max-width: 960px;
+margin: 0 auto;
+}
+
+.breathing-room {
+    padding-bottom: 3em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
